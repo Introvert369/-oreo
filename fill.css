@@ -23,10 +23,6 @@ a{
     padding-top: 250px;
     border: 3px solid #ffffff;
 }
-#nav a:hover{
-    color: rgb(255, 0, 0);
-    border: 3px groove rgb(255, 0, 0);
-}
 #mhome{
     background-image: url(maths.jpg);
     background-repeat: no-repeat;
