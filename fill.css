@@ -6,22 +6,30 @@ body{
     margin: 0;
     background-size: 100vw 100vh;
 }
-#nav{
-    display: flex;
+#force{
+    background-image: url(physics.jpg);
 }
-a{
-    flex: 1;
-    text-decoration: none;
-    font-size: xx-large;
-    font-weight: 50px;
+#force h1{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 35px;
+}
+label{
     color: #ffffff;
 }
-#nav a{
-    height: 400px;
-    flex: 1;
+#sub{
+    background-color: #ff5404;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 5px;
+}
+#art{
+    color: #ffffff;
     text-align: center;
-    padding-top: 250px;
-    border: 3px solid #ffffff;
+    width: 100vw;
+    transform: translate(0px,50px);
+    background-image: url(home.jpg);
+    background-repeat: no-repeat;
 }
 #mhome{
     background-image: url(maths.jpg);
@@ -38,17 +46,6 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-nav{
-    display: flex;
-    background-color: orangered;
-    text-align: center;
-}
-nav a{
-    flex: 1;
-}
-nav a:hover{
-    color: blue;
-}
 #physics{
     background-image: url(physics.jpg);
 }
@@ -57,4 +54,128 @@ nav a:hover{
 }
 #chem{
     background-image: url(chemistry.png);
+}
+@media screen and (min-width: 0) and (max-width: 480px) {
+    nav a{
+        background-color: orangered;
+        flex: 1;
+        text-decoration: none;
+        color: #ffffff;
+        margin-top: 0px;
+        text-align: center;
+    }
+    nav{
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        z-index: 2;
+    }
+    #nav{
+        display: block;
+    }
+    #nav a{
+        display: block;
+        height: 20vh;
+        color: #ff5404;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 55px;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    #top a{
+        width: 95%;
+        height: 150px;
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bolder;
+        background-color: #000000;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+        transform: translate(7px,50px);
+        padding-top: 50px;
+        border: 2px solid #ffffff;
+        opacity: 80%;
+    }
+    #force form{
+        text-align: center;
+    }
+    input{
+        display: block;
+        margin-left: 30%;
+    }
+}
+@media screen and (min-width: 481px){
+    nav{
+        display: flex;
+        background-color: orangered;
+        text-align: center;
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+    }
+    nav a{
+        flex: 1;;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    #nav{
+        display: flex;
+        margin-top: 10%;
+        padding-bottom: 10%;
+    }
+    #nav a{
+        height: 250px;
+        flex: 1;
+        text-align: center;
+        padding-top: 80px;
+        border: 3px solid #ffffff;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: xx-large;
+    }
+    #nav a:hover{
+        color: rgb(255, 0, 0);
+        border: 3px groove rgb(255, 0, 0);
+    }
+    nav a:hover{
+        color: blue;
+    }
+    #top a{
+        width: 95%;
+        height: 200px;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bolder;
+        background-color: #000000;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+        transform: translate(0px,50px);
+        padding-top: 50px;
+        border: 2px solid #ffffff;
+        opacity: 80%;
+    }
+    #top div{
+        display: flex;
+    }
+    #top a:hover{
+        color: orangered;
+    }
+    
+form{
+    text-align: center;
+}
+input{
+    border: 0px;
+    border-radius: 5px;
+}
 }
